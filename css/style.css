@@ -1,0 +1,265 @@
+* {
+	padding: 0;
+	border: 0;
+	margin: 0.5px;
+	list-style-type: none;
+	text-decoration: none;
+	transition: all 300ms;
+}
+
+body {
+	background-color: #2c2727;
+}
+
+.flex {
+	display: flex;
+}
+
+button,
+a {
+	border-radius: 3px;
+}
+
+#nav {
+	background: linear-gradient(180deg, #da0000, #a60000);
+}
+#toggle {
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+#toggle span {
+	width: calc(1.5rem + 1vw);
+	cursor: pointer;
+	transition: all 300ms ease-in;
+}
+#toggle span.toggle {
+	transform: rotate(360deg);
+}
+
+#toggle span:hover div {
+	background: #3e954f;
+}
+#toggle div {
+	background: #fff;
+	height: 7px;
+	width: 100%;
+	margin: 8px auto;
+	position: relative;
+	transition: transform 300ms 300ms linear;
+}
+#toggle span.toggle div:nth-child(1) {
+	top: 20px;
+	transform: rotate(45deg);
+}
+#toggle span.toggle div:nth-child(2) {
+	opacity: 0;
+}
+#toggle span.toggle div:nth-child(3) {
+	top: -10px;
+	transform: rotate(-45deg);
+}
+
+.logo-image {
+	width: calc(0.16rem + 35vw);
+	max-width: 200px;
+}
+.logo-image:hover {
+	transform: scale(1.1);
+}
+
+#page-body {
+	height: 110px;
+}
+#banner-content {
+	height: 110px;
+	background-color: #fc0;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+#menu-overlay {
+	height: 200px;
+	position: absolute;
+	background: linear-gradient(180deg, #da0000, #a60000);
+	width: 60%;
+	height: auto;
+	transform-origin: top;
+	transform: translateX(-110%);
+	transition: transform 300ms linear, box-shadow 500ms 380ms ease-out;
+	z-index: 1;
+}
+
+#menu-overlay.toggle {
+	transform: translateX(0);
+	box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.238);
+}
+
+#logo {
+	flex: 2;
+	cursor: pointer;
+	height: 110px;
+	justify-content: center;
+	align-items: center;
+}
+#search:hover i {
+	color: #3e954f;
+}
+#search {
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+.fas.fa-bars {
+	color: #fff;
+	font-size: calc(0.7rem + 3vw);
+	padding: 20px;
+	cursor: pointer;
+	padding-top: 30px;
+	justify-content: flex-end;
+}
+.fas.fa-search {
+	color: #fff;
+	font-size: calc(0.7rem + 3vw);
+	padding: 30px;
+	padding-left: 50px;
+	padding-right: 0px;
+	cursor: pointer;
+}
+.menu-connect {
+	text-decoration: none;
+	background: linear-gradient(to bottom, #fc0, #dc7b00);
+	color: white;
+	padding: 4% 0;
+	font-size: calc(100% + 10px);
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: 70%;
+	font-weight: 900;
+}
+.menu-connect:hover {
+	background: linear-gradient(rgba(97, 168, 54), rgb(71, 119, 39));
+}
+#signup {
+	background: linear-gradient(rgba(97, 168, 54), rgb(71, 119, 39));
+	transition: all 1000ms;
+}
+
+#login-signup {
+	border-bottom: #000 solid 2px;
+	padding: 3% 0;
+}
+
+.menu-overlay-content-list {
+	padding: 4.2% 0 4.2% 4.2%;
+	font-family: 'Courier New', Courier, monospace;
+}
+.menu-overlay-content-list:hover {
+	background: linear-gradient(180deg, #da0000, #a60000);
+}
+.menu-overlay-content {
+	font-size: calc(0.6rem + 2vw);
+	color: #fff;
+	text-align: left;
+	width: 100%;
+	display: block;
+}
+.menu-overlay-content-list:hover .menu-overlay-content {
+	font-weight: 700;
+	color: #5dea79;
+}
+
+main {
+	min-height: calc(100vh - ((110px) * 3));
+	position: relative;
+}
+
+#images {
+	flex-wrap: wrap;
+}
+#images > .img {
+	width: 300px;
+	height: 300px;
+	border: 3px solid #fff;
+	/* margin: auto; */
+
+	flex: 1 1 auto;
+}
+
+/* Overall MAIN_CONTENTS */
+
+.main-content {
+	margin: auto;
+	text-align: center;
+}
+
+.main-content-header {
+	color: #fff;
+	font-size: calc(100% + 5px);
+}
+
+/* Overall FORMS */
+.form {
+	padding: 20px 10px;
+}
+.form input {
+	text-align: center;
+	width: 100%;
+	border-radius: 3px;
+	font-size: 22px;
+	border: none;
+	color: #2c2727;
+	outline: none;
+	letter-spacing: 3px;
+	margin-top: 10px;
+	height: 80px;
+	font-weight: bold;
+}
+.login-form input::placeholder {
+	color: #2c2727;
+}
+
+.login-form .login-btn {
+	color: #fff;
+	font-weight: 900;
+	font-size: calc(100% + 10px);
+	cursor: pointer;
+}
+
+.login-form label {
+	align-items: flex-end;
+	justify-content: center;
+	margin: 40px 0 20px;
+	color: #fff;
+}
+.login-form label input {
+	width: 10%;
+	height: 40px;
+}
+.login-form a {
+	font-size: calc(100% + 7px);
+	color: #fff;
+	text-decoration-line: underline;
+	text-decoration-color: #fff;
+	cursor: pointer;
+}
+
+.login-form a:hover {
+	color: #3e954f95;
+	text-decoration-color: #3e954f;
+}
+
+footer {
+	background: linear-gradient(180deg, #da0000, #a60000);
+	height: 110px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+#footer-content {
+	font-size: calc(1rem + 1vw);
+}
