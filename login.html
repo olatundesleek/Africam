@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Africam | Header</title>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="fontawesome-free-5.10.0-web/css/all.css" />
+	</head>
+	<body>
+		<header class="flex">
+			<!-- HAMBURGER ICON -->
+			<div id="toggle" class="flex">
+				<span class="hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</span>
+			</div>
+
+			<!-- SITE LOGO -->
+			<div id="logo" class="flex">
+				<a href="index.html"
+					><img class="logo-image" src="images/Africamlogo1.png"
+				/></a>
+			</div>
+
+			<!-- MAIN NAV -->
+			<nav class="media-800 flex">
+				<ul>
+					<li>
+						<a href="#">
+							Live cams
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							Awards
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Jasmin Elite
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							Get Credits
+						</a>
+					</li>
+
+					<li class="no-border">
+						<a href="#">
+							<i class="fa fa-caret-down"> EN</i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Login
+						</a>
+					</li>
+					<li class="no-border">
+						<button class="menu-connect">Join now</button>
+					</li>
+				</ul>
+			</nav>
+			<!-- </div> -->
+
+			<!-- NAV MENU SIDEBAR -->
+			<nav id="sidebar-menu" class="flex">
+				<div id="sect-one" class="flex">
+					<button class="menu-connect" id="login" href="./login.html">
+						Log in
+					</button>
+					<button class="menu-connect" id="sign-up" href="#">
+						Sign up
+					</button>
+				</div>
+
+				<ul id="sect-two">
+					<li>
+						<a href="">Live cam</a>
+					</li>
+					<li>
+						<a href="">Vip Show</a>
+					</li>
+					<li>
+						<a href="">Awards</a>
+					</li>
+					<li>
+						<a href="">Models</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+			<main class="flex">
+				<div class="main-content">
+					<div class="main-content-header">
+						<h1>Login Page</h1>
+					</div>
+
+					<form class="form login-form">
+						<input
+							id="user-name"
+							type="text"
+							placeholder="Enter User-Name..."
+						/>
+						<input
+							id="password"
+							type="password"
+							placeholder="Enter Password..."
+						/>
+						<label for="logged-in" class="flex">
+							<input type="checkbox" id="logged-in" checked />
+							<h2>Keep me Logged in</h2>
+						</label>
+
+						<input
+							class="menu-connect login-btn"
+							type="submit"
+							value="Log in"
+						/>
+						<h2><a href="#">Sign up</a></h2>
+						<h3><a href="#">forgot my password</a></h3>
+					</form>
+				</div>
+			</main>
+		</div>
+
+		<footer class="flex">
+			<div id="footer-content">
+				Africam &copy; CopyRight 2019
+			</div>
+		</footer>
+
+		<script src="./js/africam.js"></script>
+	</body>
+</html>
