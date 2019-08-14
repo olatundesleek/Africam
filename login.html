@@ -9,134 +9,221 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<header class="flex">
-			<!-- HAMBURGER ICON -->
-			<div id="toggle" class="flex">
-				<span class="hamburger">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</span>
-			</div>
-
-			<!-- SITE LOGO -->
-			<div id="logo" class="flex">
-				<a href="index.html"
-					><img class="logo-image" src="images/Africamlogo1.png"
-				/></a>
-			</div>
-
-			<!-- MAIN NAV -->
-			<nav class="media-800 flex">
-				<ul>
-					<li>
-						<a href="#">
-							Live cams
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Awards
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Jasmin Elite
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Get Credits
-						</a>
-					</li>
-
-					<li class="no-border">
-						<a href="#">
-							<i class="fa fa-caret-down"> EN</i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Login
-						</a>
-					</li>
-					<li class="no-border">
-						<button class="menu-connect">Join now</button>
-					</li>
-				</ul>
-			</nav>
-			<!-- </div> -->
-
-			<!-- NAV MENU SIDEBAR -->
-			<nav id="sidebar-menu" class="flex">
-				<div id="sect-one" class="flex">
-					<button class="menu-connect" id="login" href="./login.html">
-						Log in
-					</button>
-					<button class="menu-connect" id="sign-up" href="#">
-						Sign up
-					</button>
+		<div class="container flex">
+			<header class="flex">
+				<!-- HAMBURGER ICON -->
+				<div id="toggle" class="flex">
+					<span class="hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</span>
 				</div>
 
-				<ul id="sect-two">
-					<li>
-						<a href="">Live cam</a>
-					</li>
-					<li>
-						<a href="">Vip Show</a>
-					</li>
-					<li>
-						<a href="">Awards</a>
-					</li>
-					<li>
-						<a href="">Models</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+				<!-- SITE LOGO -->
+				<div id="logo" class="flex">
+					<a href="index.html"
+						><img class="logo-image" src="images/Africamlogo1.png"
+					/></a>
+				</div>
 
-			<main class="flex">
-				<div class="main-content">
-					<div class="main-content-header">
-						<h1>Login Page</h1>
+				<!-- MAIN NAV -->
+				<nav class="media-desktop flex">
+					<ul>
+						<li>
+							<a href="#">
+								Live cams
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								Awards
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Africam Elite
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								Get Credits
+							</a>
+						</li>
+
+						<li class="no-border">
+							<a href="#">
+								<i class="fa fa-caret-down"> EN</i>
+							</a>
+						</li>
+						<li class="nav-login-btn">
+							<a class="nav-login-btn" href="#">
+								Login
+							</a>
+						</li>
+						<li class="no-border">
+							<button class="menu-connect">Join now</button>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="search flex media-phone">
+					<div class="i fa fa-search"></div>
+				</div>
+			</header>
+
+			<main>
+				<!-- NAV MENU SIDEBAR -->
+				<nav id="sidebar-menu" class="flex">
+					<div id="sect-one" class="media-phone flex">
+						<button class="menu-connect" id="login">
+							<a href="./login.html">
+								Log in
+							</a>
+						</button>
+
+						<button class="menu-connect" id="sign-up">
+							<a href="#">
+								Sign up
+							</a>
+						</button>
 					</div>
 
-					<form class="form login-form">
-						<input
-							id="user-name"
-							type="text"
-							placeholder="Enter User-Name..."
-						/>
-						<input
-							id="password"
-							type="password"
-							placeholder="Enter Password..."
-						/>
+					<ul id="sect-two"><li class="dropdown-list">
+							<a href="#" class="flex"
+								><span>Categories</span> <i class="fa fa-angle-down"></i
+							></a>
+							<ul>
+								<li>category 1</li>
+								<li>category 2</li>
+								<li>category 3</li>
+								<li>category 4</li>
+								<li>category 5</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Live cam</a>
+						</li>
+						<li>
+							<a href="#">Vip Show</a>
+						</li>
+						<li>
+							<a href="#">Awards</a>
+						</li>
+						<li>
+							<a href="#">Models</a>
+						</li>
+						<li class="media-phone">
+							<a href="#">Get credits</a>
+						</li>
+						<li class="dropdown-list">
+							<a href="#" class="flex"
+								><span>Categories</span> <i class="fa fa-angle-down"></i
+							></a>
+							<ul>
+								<li>category 1</li>
+								<li>category 2</li>
+								<li>category 3</li>
+								<li>category 4</li>
+								<li>category 5</li>
+							</ul>
+						</li>
+						<li class="dropdown-list">
+							<a href="#" class="flex"
+								><span>Categories</span> <i class="fa fa-angle-down"></i
+							></a>
+							<ul>
+								<li>category 1</li>
+								<li>category 2</li>
+								<li>category 3</li>
+								<li>category 4</li>
+								<li>category 5</li>
+							</ul>
+						</li>
+						<li class="dropdown-list">
+							<a href="#" class="flex"
+								><span>Categories</span> <i class="fa fa-angle-down"></i
+							></a>
+							<ul>
+								<li>category 1</li>
+								<li>category 2</li>
+								<li>category 3</li>
+								<li>category 4</li>
+								<li>category 5</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<!-- ADVERTISEMENT BANNER -->
+				<div class="ADV-banner">
+					<div class="banner-content">
+						<img src="images/Africamlogo.png" alt="Adv" />
+					</div>
+				</div>
+
+				<div class="login-form login-form-media-phone flex">
+					<form>
+						<div class="desc"><h1>Welcome to Africam</h1></div>
+						<div class="form-group flex">
+							<i class="fa fa-user"></i
+							><input
+								id="login-user-name"
+								type="text"
+								placeholder="Enter User-Name..."
+							/>
+						</div>
+						<div class="form-group flex">
+							<i class="fa fa-key"></i
+							><input
+								id="login-password"
+								type="password"
+								placeholder="Enter Password..."
+							/>
+						</div>
+
 						<label for="logged-in" class="flex">
 							<input type="checkbox" id="logged-in" checked />
-							<h2>Keep me Logged in</h2>
+							Keep me Logged in
 						</label>
 
-						<input
-							class="menu-connect login-btn"
-							type="submit"
-							value="Log in"
-						/>
-						<h2><a href="#">Sign up</a></h2>
-						<h3><a href="#">forgot my password</a></h3>
+						<input class="menu-connect" type="submit" value="Log in" />
+						<a href="#">Sign up</a>
+						<a href="#">forgot my password</a>
 					</form>
 				</div>
 			</main>
+
+			<footer class="flex">
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="#">Contact Us</a></li>
+							
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-twitter-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							
+							<li><a href="#">F.A.Q.</a></li>
+							<li><a href="#">DMCA Complaint</a></li>
+							<li><a href="#">Online Support</a></li>
+						</ul>
+					</nav>
+				</footer>
 		</div>
 
-		<footer class="flex">
-			<div id="footer-content">
-				Africam &copy; CopyRight 2019
-			</div>
-		</footer>
-
-		<script src="./js/africam.js"></script>
+		<script type="module" src="js/africam.js"></script>
 	</body>
 </html>

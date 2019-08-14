@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="container flex">
-			<div class="login-form flex">
+			<div class="login-form login-pop-up flex">
 				<form>
 					<div class="title flex">
 						<h1>Login</h1>
@@ -18,18 +18,22 @@
 					</div>
 
 					<div class="desc"><h1>Welcome to Africam</h1></div>
-					<i class="fa fa-user"
+					<div class="form-group flex">
+						<i class="fa fa-user"></i
 						><input
 							id="login-user-name"
 							type="text"
 							placeholder="Enter User-Name..."
-					/></i>
-					<i class="fa fa-key"
+						/>
+					</div>
+					<div class="form-group flex">
+						<i class="fa fa-key"></i
 						><input
 							id="login-password"
 							type="password"
 							placeholder="Enter Password..."
-					/></i>
+						/>
+					</div>
 
 					<label for="logged-in" class="flex">
 						<input type="checkbox" id="logged-in" checked />
@@ -124,23 +128,68 @@
 					</div>
 
 					<ul id="sect-two">
+							<li class="dropdown-list">
+									<a href="#" class="flex"
+										><span>Categories</span> <i class="fa fa-angle-down"></i
+									></a>
+									<ul>
+										<li>category 1</li>
+										<li>category 2</li>
+										<li>category 3</li>
+										<li>category 4</li>
+										<li>category 5</li>
+									</ul>
+								</li>
 						<li>
-							<a href="">Live cam</a>
+							<a href="#">Live cam</a>
 						</li>
 						<li>
-							<a href="">Vip Show</a>
+							<a href="#">Vip Show</a>
 						</li>
 						<li>
-							<a href="">Awards</a>
+							<a href="#">Awards</a>
 						</li>
 						<li>
-							<a href="">Models</a>
+							<a href="#">Models</a>
 						</li>
 						<li class="media-phone">
-							<a href="">Get credits</a>
+							<a href="#">Get credits</a>
 						</li>
-						<li>
-							<a href="">Categories</a>
+						<li class="dropdown-list">
+							<a href="#" class="flex"
+								><span>Categories</span> <i class="fa fa-angle-down"></i
+							></a>
+							<ul>
+								<li>category 1</li>
+								<li>category 2</li>
+								<li>category 3</li>
+								<li>category 4</li>
+								<li>category 5</li>
+							</ul>
+						</li>
+						<li class="dropdown-list">
+							<a href="#" class="flex"
+								><span>Categories</span> <i class="fa fa-angle-down"></i
+							></a>
+							<ul>
+								<li>category 1</li>
+								<li>category 2</li>
+								<li>category 3</li>
+								<li>category 4</li>
+								<li>category 5</li>
+							</ul>
+						</li>
+						<li class="dropdown-list">
+							<a href="#" class="flex"
+								><span>Categories</span> <i class="fa fa-angle-down"></i
+							></a>
+							<ul>
+								<li>category 1</li>
+								<li>category 2</li>
+								<li>category 3</li>
+								<li>category 4</li>
+								<li>category 5</li>
+							</ul>
 						</li>
 					</ul>
 				</nav>
@@ -240,12 +289,27 @@
 			</main>
 
 			<footer class="flex">
-				<div id="footer-content">
-					Africam &copy; CopyRight 2019
-				</div>
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Contact Us</a></li>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#">F.A.Q.</a></li>
+						
+						<li><a href="#">DMCA Complaint</a></li>
+						<li><a href="#">Online Support</a></li>
+						
+					</ul>
+
+				</nav>
 			</footer>
 		</div>
 
-		<script type="module" src="js/africam.js"></script>
+		<script src="js/africam.js"></script>
 	</body>
 </html>

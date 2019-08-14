@@ -47,6 +47,17 @@ body {
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
   text-shadow: 0 1px 0.5px rgba(255, 255, 255, 0.39);
+  position: relative;
+  height: 40px;
+}
+
+.menu-connect a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
 .menu-connect:hover {
@@ -74,6 +85,7 @@ body {
 button {
   border-radius: 2px;
   cursor: pointer;
+  outline: none;
 }
 
 .login-form {
@@ -132,33 +144,41 @@ button {
 }
 
 .login-form form .desc {
-  padding: 15px;
+  margin: 20px 0;
 }
 
 .login-form form .desc h1 {
   font-size: 1rem;
 }
 
-.login-form form i {
-  display: block;
+.login-form form .form-group {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
 }
 
-.login-form form i input {
+.login-form form .form-group i {
+  position: relative;
+  left: 30px;
+}
+
+.login-form form .form-group input {
   border: 1px rgba(253, 100, 100, 0.4) solid;
   border-radius: 5px;
   background: rgba(46, 1, 1, 0.459);
-  padding: 10px 5px;
-  width: 75%;
+  padding: 20px 5px 20px 50px;
+  width: 100%;
 }
 
-.login-form form i:hover {
+.login-form form .form-group:hover {
   color: #61a836;
 }
 
 .login-form form label {
   display: block;
-  padding: 15px 0 5px;
   cursor: pointer;
+  margin: 20px 0 0;
 }
 
 .login-form form label:hover {
@@ -166,7 +186,7 @@ button {
 }
 
 .login-form form .menu-connect {
-  margin: 0 0 5px;
+  margin: 10px 0 5px;
 }
 
 .login-form form a {
@@ -186,6 +206,34 @@ button {
 .login-form.loginPop {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.login-form-media-phone {
+  height: calc(100vh - 200px);
+  background: none;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  position: unset;
+  z-index: 0;
+}
+
+.login-form-media-phone form {
+  background: none;
+  width: 100%;
+}
+
+.login-form-media-phone form .desc h1 {
+  font-size: 1.5rem;
+}
+
+.login-form-media-phone form label input {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-right: 10px;
+}
+
+.login-form-media-phone * {
+  font-size: 110%;
 }
 
 header {
@@ -270,6 +318,16 @@ header #logo {
           flex: 1;
 }
 
+@media (max-width: 610px) {
+  header #logo {
+    height: calc(102px / 1.5);
+  }
+}
+
+header #logo img {
+  height: 100%;
+}
+
 header #logo:hover {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
@@ -338,10 +396,9 @@ main {
 main #sidebar-menu {
   position: fixed;
   top: 103px;
-  left: 0;
   background: #7a0202;
   width: calc(200px + 90px);
-  min-height: calc(100vh - 103.5px);
+  height: calc(100vh - 150px);
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: translateX(-110%);
@@ -355,6 +412,8 @@ main #sidebar-menu {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
+  z-index: 1;
+  overflow-y: auto;
 }
 
 main #sidebar-menu.toggle {
@@ -362,6 +421,15 @@ main #sidebar-menu.toggle {
           transform: translateX(0);
   -webkit-box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.238);
           box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.238);
+}
+
+@media (max-width: 610px) {
+  main #sidebar-menu {
+    top: calc(103px / 1.5);
+  }
+  main #sidebar-menu * {
+    font-size: 105%;
+  }
 }
 
 main #sidebar-menu #sect-one {
@@ -382,8 +450,6 @@ main #sidebar-menu #sect-one {
 main #sidebar-menu #sect-one .menu-connect {
   width: 100%;
   margin-bottom: 10px;
-  position: relative;
-  z-index: 1;
 }
 
 main #sidebar-menu #sect-one .menu-connect:last-child {
@@ -420,6 +486,56 @@ main #sidebar-menu #sect-two li:hover {
 
 main #sidebar-menu #sect-two li:hover a {
   color: #61a836;
+}
+
+main #sidebar-menu #sect-two li.dropdown-list {
+  background: rgba(51, 51, 51, 0.3);
+  padding-bottom: 0;
+  -webkit-box-shadow: inset 0 0 10px rgba(53, 0, 0, 0.5);
+          box-shadow: inset 0 0 10px rgba(53, 0, 0, 0.5);
+  height: 40px;
+}
+
+main #sidebar-menu #sect-two li.dropdown-list a span {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+main #sidebar-menu #sect-two li.dropdown-list a i {
+  font-size: 120%;
+}
+
+main #sidebar-menu #sect-two li.dropdown-list ul {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  margin-top: 15px;
+  -webkit-box-shadow: inset 0 0 15px 3px rgba(53, 0, 0, 0.7);
+          box-shadow: inset 0 0 15px 3px rgba(53, 0, 0, 0.7);
+}
+
+main #sidebar-menu #sect-two li.dropdown-list ul li {
+  padding: 15px 20px;
+}
+
+main #sidebar-menu #sect-two li.dropdown-list.toggle {
+  height: auto;
+}
+
+main #sidebar-menu #sect-two li.dropdown-list.toggle i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+main #sidebar-menu #sect-two li.dropdown-list.toggle ul {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
 }
 
 main .ADV-banner {
@@ -487,4 +603,23 @@ footer {
       -ms-flex: 0 1;
           flex: 0 1;
 }
-/*# sourceMappingURL=header.css.map */
+
+footer .footer-nav ul li {
+  display: inline-block;
+  border-left: 2px solid #7a0202;
+}
+
+footer .footer-nav ul li:first-child {
+  border: none;
+}
+
+footer .footer-nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+footer .footer-nav ul li a:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
