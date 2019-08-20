@@ -4,13 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Africam | Header</title>
+		<title>Africam | Login</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="./images/Africamlogo1.png" />
 	</head>
-	<body>
+	<body id="top">
 		<div class="container flex">
-			<header class="flex">
+			<header class="flex flex-center">
 				<!-- HAMBURGER ICON -->
 				<div id="toggle" class="flex">
 					<span class="hamburger">
@@ -58,11 +59,6 @@
 								<i class="fa fa-caret-down"> EN</i>
 							</a>
 						</li>
-						<li class="nav-login-btn">
-							<a class="nav-login-btn" href="#">
-								Login
-							</a>
-						</li>
 						<li class="no-border">
 							<button class="menu-connect">Join now</button>
 						</li>
@@ -77,7 +73,7 @@
 			<main>
 				<!-- NAV MENU SIDEBAR -->
 				<nav id="sidebar-menu" class="flex">
-					<div id="sect-one" class="media-phone flex">
+					<div id="sect-one" class="media-phone flex flex-center">
 						<button class="menu-connect" id="login">
 							<a href="./login.html">
 								Log in
@@ -112,11 +108,11 @@
 								><span>Categories</span> <i class="fa fa-angle-down"></i
 							></a>
 							<ul>
-								<li>category 1</li>
-								<li>category 2</li>
-								<li>category 3</li>
-								<li>category 4</li>
-								<li>category 5</li>
+								<li><a href="#">category 1</a></li>
+								<li><a href="#">category 2</a></li>
+								<li><a href="#">category 3</a></li>
+								<li><a href="#">category 4</a></li>
+								<li><a href="#">category 5</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -128,7 +124,7 @@
 					</div>
 				</div>
 
-				<div class="login-form login-form-media-phone flex">
+				<div id="login-form" class="login-form-media-phone flex flex-center">
 					<form>
 						<div class="desc"><h1>Welcome to Africam</h1></div>
 						<div class="form-group flex">
@@ -160,33 +156,33 @@
 				</div>
 			</main>
 
-			<footer class="flex">
-					<nav class="footer-nav">
-						<ul>
-							<li><a href="#">Contact Us</a></li>
-							
-							<li>
-								<a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fas fa-twitter-square"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-instagram"></i>
-								</a>
-							</li>
-							
-							<li><a href="#">F.A.Q.</a></li>
-							<li><a href="#">DMCA Complaint</a></li>
-							<li><a href="#">Online Support</a></li>
-						</ul>
-					</nav>
-				</footer>
+			<footer class="flex flex-center">
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Contact Us</a></li>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-twitter-square"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li><a href="#">F.A.Q.</a></li>
+						<li><a href="#">DMCA Complaint</a></li>
+						<li><a href="#">Online Support</a></li>
+					</ul>
+				</nav>
+
+				<div class="go-to-top-btn menu-connect">
+					<a class="flex flex-center" href="#top"
+						><i class="fa fa-angle-up"></i
+					></a>
+				</div>
+			</footer>
 		</div>
 
 		<script type="module" src="js/africam.js"></script>

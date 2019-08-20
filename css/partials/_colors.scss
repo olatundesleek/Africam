@@ -1,0 +1,12 @@
+$colors: (
+	primaryR: #c50303,
+	darkPrimary: darken(#c50303, 15%),
+	assent: #ffca00,
+	darkAssent: #f98a05,
+	colorG: #61a836,
+	darkColorG: darken(#61a836, 15%)
+);
+
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}

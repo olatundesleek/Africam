@@ -8,9 +8,9 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body>
+	<body id="top">
 		<div class="container flex">
-			<div class="login-form login-pop-up flex">
+			<div id="login-form" class="login-form-pop-up flex flex-center">
 				<form>
 					<div class="title flex">
 						<h1>Login</h1>
@@ -46,7 +46,7 @@
 				</form>
 			</div>
 
-			<header class="flex">
+			<header class="flex flex-center">
 				<!-- HAMBURGER ICON -->
 				<div id="toggle" class="flex">
 					<span class="hamburger">
@@ -91,7 +91,7 @@
 
 						<li class="no-border">
 							<a href="#">
-								<i class="fa fa-caret-down"> EN</i>
+								<i class="dot fa fa-caret-down"> EN</i>
 							</a>
 						</li>
 						<li class="nav-login-btn">
@@ -111,9 +111,10 @@
 			</header>
 
 			<main>
+
 				<!-- NAV MENU SIDEBAR -->
 				<nav id="sidebar-menu" class="flex">
-					<div id="sect-one" class="media-phone flex">
+					<div id="sect-one" class="media-phone flex flex-center">
 						<button class="menu-connect" id="login">
 							<a href="./login.html">
 								Log in
@@ -148,11 +149,11 @@
 								><span>Categories</span> <i class="fa fa-angle-down"></i
 							></a>
 							<ul>
-								<li>category 1</li>
-								<li>category 2</li>
-								<li>category 3</li>
-								<li>category 4</li>
-								<li>category 5</li>
+								<li><a href="#">category 1</a></li>
+								<li><a href="#">category 2</a></li>
+								<li><a href="#">category 3</a></li>
+								<li><a href="#">category 4</a></li>
+								<li><a href="#">category 5</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -167,92 +168,308 @@
 				<div id="images" class="flex">
 					<div class="img-container">
 						<img src="images/1.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/2.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/3.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/4.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/5.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/6.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/7.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/8.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/9.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/10.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/11.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/12.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/13.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/14.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/1.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/2.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/3.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/4.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/5.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/6.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/7.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/8.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/9.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/10.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/11.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/12.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/13.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 					<div class="img-container">
 						<img src="images/14.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/1.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/2.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/3.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/4.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/5.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/6.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/7.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/8.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/9.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/10.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/11.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/12.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/13.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/14.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/1.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/2.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/3.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/4.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/5.jpg" alt="">
+						<i class="dot fa fa-circle-thin not-active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/6.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/7.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/8.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/9.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/10.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/11.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/12.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/13.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/14.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/1.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/2.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/3.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
+					</div>
+					<div class="img-container">
+						<img src="images/4.jpg" alt="">
+						<i class="dot fa fa-dot-circle-o active"><span class="name">Andreal Smith</span></i>
+						<i class="heart fa fa-heart-o not-liked"></i>
 					</div>
 				</div>
 			</main>
 
-			<footer class="flex">
+			<footer class="flex flex-center">
 				<nav class="footer-nav">
 					<ul>
 						<li><a href="#">Contact Us</a></li>
@@ -264,16 +481,17 @@
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#">F.A.Q.</a></li>
-						
 						<li><a href="#">DMCA Complaint</a></li>
 						<li><a href="#">Online Support</a></li>
-						
 					</ul>
-
 				</nav>
+
+				<div class="go-to-top-btn menu-connect">
+					<a class="flex flex-center" href="#top"><i class="fa fa-angle-up"></i></a>
+				</div>
 			</footer>
 		</div>
 
-		<script src="js/africam.js"></script>
+		<script type="module" src="js/africam.js"></script>
 	</body>
 </html>

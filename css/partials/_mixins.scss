@@ -1,0 +1,133 @@
+@mixin phone {
+	@media (max-width: 610px) {
+		@content;
+	}
+}
+@mixin smallPhone {
+	@media (max-width: 411px) {
+		@content;
+	}
+}
+@mixin tab {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin flex {
+	.flex {
+		display: flex;
+	}
+	.flex-center {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@mixin form(
+	$bg-color: color(primaryR),
+	$width: 50%,
+	$desc-font-size: 1rem,
+	$label-input-margin-right: 0,
+	$label-input-scale: scale(1),
+	$all-font-size: 100%
+) {
+	form {
+		background: $bg-color;
+		min-height: 50vh;
+		border-radius: 5px;
+		padding: 40px 15px;
+		position: relative;
+		width: $width;
+		text-align: center;
+
+		.title {
+			width: 100%;
+			padding: 0 15px;
+			height: 40px;
+			position: absolute;
+			align-items: center;
+			top: 0;
+			left: 0;
+			border-radius: 5px 5px 0 0;
+			background-color: color(darkPrimary);
+
+			h1 {
+				font-size: 1.3rem;
+				text-align: left;
+				flex: auto;
+			}
+
+			i {
+				cursor: pointer;
+				font-size: 1.3rem;
+			}
+		}
+
+		.desc {
+			margin: 20px 0;
+
+			h1 {
+				font-size: 1rem;
+			}
+		}
+
+		.form-group {
+			align-items: center;
+			padding: 5px 0;
+
+			i {
+				position: relative;
+				left: 30px;
+			}
+			input {
+				border: 1px lighten(rgba(197, 3, 3, 0.4), 30%) solid;
+				border-radius: 5px;
+				background: darken(rgba(197, 3, 3, 0.459), 30%);
+				padding: 20px 5px 20px 50px;
+				width: 100%;
+			}
+
+			&:hover {
+				color: color(colorG);
+			}
+		}
+
+		label {
+			display: block;
+			cursor: pointer;
+			margin: 20px 0 0;
+
+			input {
+				transform: $label-input-scale;
+				margin-right: $label-input-margin-right;
+			}
+
+			&:hover {
+				color: color(colorG);
+			}
+		}
+
+		.menu-connect {
+			margin: 10px 0 5px;
+		}
+
+		a {
+			display: block;
+			text-decoration: underline;
+			text-decoration-color: rgba(255, 255, 255, 0.287);
+			font-weight: bold;
+
+			&:hover {
+				color: color(colorG);
+				text-decoration-color: darken(rgba(98, 168, 54, 0.522), 10%);
+			}
+		}
+
+		& * {
+			font : {
+				size: $all-font-size;
+			}
+		}
+	}
+}

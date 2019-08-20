@@ -1,0 +1,199 @@
+@mixin main {
+  main {
+    flex: 1 0;
+
+    #sidebar-menu {
+      position: fixed;
+      top: 103px;
+      background: color(darkPrimary);
+      width: calc(200px + 90px);
+      height: calc(100vh - 150px);
+      transform-origin: top;
+      transform: translateX(-110%);
+      transition: transform 300ms linear, box-shadow 500ms 380ms ease-out;
+      flex-direction: column;
+      font-family: "Courier New", Courier, monospace;
+      z-index: 1;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar-track {
+        background: color(darkPrimary);
+      }
+
+      &.toggle {
+        transform: translateX(0);
+        box-shadow: 5px 15px 10px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      @include phone {
+        * {
+          font-size: 105%;
+        }
+
+        top: calc(103px / 1.52);
+      }
+
+      #sect-one {
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: #000 solid 2px;
+
+        .menu-connect {
+          width: 100%;
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0px;
+            background: linear-gradient(color(colorG), color(darkColorG) 90%);
+          }
+
+          a {
+            color: inherit;
+          }
+        }
+      }
+
+      #sect-two {
+        padding: 10px 0;
+        flex: auto;
+
+        li {
+          padding: 0;
+          height: 40px;
+
+          a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 10px;
+          }
+
+          &:hover {
+            background: rgba(51, 51, 51, 0.3);
+            border-color: color(colorG);
+
+            a {
+              color: color(colorG);
+            }
+          }
+
+          &.dropdown-list {
+            background: rgba(51, 51, 51, 0.3);
+            box-shadow: inset 0 0 10px rgba(53, 0, 0, 0.5);
+
+            a {
+              position: relative;
+              z-index: -1;
+              display: flex;
+              span {
+                flex: auto;
+              }
+
+              i {
+                font-size: 120%;
+              }
+            }
+
+            ul {
+              transition: none;
+              transform-origin: top;
+              transform: rotateX(90deg);
+              box-shadow: inset 0 0 15px 3px rgba(53, 0, 0, 0.7);
+
+              a {
+                position: relative;
+                z-index: 1;
+              }
+            }
+
+            &.toggle {
+              height: auto;
+
+              i {
+                transform: rotate(180deg);
+              }
+
+              ul {
+                transition: all 400ms;
+                transform: rotateX(0);
+              }
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .ADV-banner {
+      display: none;
+
+      .banner-content {
+        height: 110px;
+        background-color: color(darkAssent);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    #images {
+      flex-wrap: wrap;
+
+      .img-container {
+        width: 200px;
+        width: calc(100px + 10vw);
+        height: 150px;
+        margin: 3px;
+        flex: 1 1 auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+        border-radius: 3px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .fa {
+          position: absolute;
+          bottom: 10%;
+        }
+        .dot {
+          left: 10%;
+          color: color(colorG);
+
+          .name {
+            padding-left: 10px;
+          }
+        }
+        .heart {
+          cursor: pointer;
+          right: 10%;
+          color: color(primaryR);
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+        .not-active,
+        .not-liked {
+          font-weight: bold;
+        }
+
+        @include smallPhone {
+          width: calc(100px + 10vw);
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.015);
+          }
+        }
+      }
+    }
+  }
+}

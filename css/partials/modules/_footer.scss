@@ -1,0 +1,47 @@
+@mixin footer {
+	footer {
+		background: linear-gradient(180deg, color(primaryR), color(darkPrimary));
+		width: 100%;
+		min-height: 50px;
+		color: #fff;
+		box-shadow: 0 -10px 10px 2px rgba(0, 0, 0, 0.5);
+		flex: 0 1;
+		position: relative;
+
+		.go-to-top-btn {
+			border-radius: 50%;
+			position: absolute;
+			top: -40%;
+			right: 1%;
+
+			@include phone {
+				top: -35%;
+			}
+		}
+
+		.footer-nav {
+			ul {
+				text-align: center;
+
+				li {
+					display: inline-block;
+					border-left: 2px solid color(darkPrimary);
+
+					&:first-child {
+						border: none;
+					}
+
+					a {
+						padding: 0 5px;
+						font-weight: bold;
+						opacity: 0.7;
+
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
